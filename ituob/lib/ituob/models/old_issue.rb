@@ -22,6 +22,7 @@ require_relative 'e118_amendment'
 require_relative 'e164acn_amendment'
 require_relative 'e164cc_amendment'
 require_relative 'e212mnc_amendment'
+require_relative 'e212icc_amendment'
 require_relative 'e218trcc_amendment'
 require_relative 'f32tdi_amendment'
 require_relative 'f400_amendment'
@@ -52,7 +53,7 @@ module Ituob
             "DPAmendment" => Ituob::Models::DPAmendment, # 994-E.164C ##
             "E164ACNAmendment" => Ituob::Models::E164ACNAmendment, # 1015-E.164B ##
             "E164CCAmendment" => Ituob::Models::E164CCAmendment, # 1114-E.164D-Note-O/P/etc. # significant quality control problems
-            # "E212ICCAmendment" => Ituob::Models::E212ICCAmendment, # ?????????????????
+            "E212ICCAmendment" => Ituob::Models::E212ICCAmendment, # 1117-E.212A
             "E212MNCAmendment" => Ituob::Models::E212MNCAmendment, # 1162-E.212 ##
             "E218TRCCAmendment" => Ituob::Models::E218TRCCAmendment, # 1125-E.218 ##
             "F32TDIAmendment" => Ituob::Models::F32TDIAmendment, # 980-F.32 ##
@@ -116,7 +117,7 @@ module Ituob
         'DP' => DPAmendment,
         'E164_ACN' => E164ACNAmendment, # datasets/1015-E.164B/data.yaml
         'E164_CC' => E164CCAmendment,
-        # 'E212_ICC' => E212ICCAmendment,
+        'E212_ICC' => E212ICCAmendment,
         'E212_MNC' => E212MNCAmendment,
         'E218_TRCC' => E218TRCCAmendment,
         'F32_TDI' => F32TDIAmendment,
